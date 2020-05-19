@@ -1,0 +1,17 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Cedarville Cursive", cursive;
+    background-color: #181717;
+}
+
+.logo {
+    position: absolute;
+    z-index: 9;
+    width: 100px;
+    --f-size: 5;
+    --f-unit: 1vmin;
+    --f: calc(var(--f-size) * var(--f-unit));
+    font-size: var(--f);
+}
