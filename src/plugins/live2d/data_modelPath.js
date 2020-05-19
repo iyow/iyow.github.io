@@ -1,0 +1,1 @@
+export let name = '模型路径数组';export default ["dist/live2d/model/haru01/haru01.model.json","dist/live2d/model/platelet/model.json","dist/live2d/model/tororo/tororo.model.json","dist/live2d/model/wanko/wanko.model.json"]
