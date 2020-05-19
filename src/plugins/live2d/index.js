@@ -12,8 +12,10 @@ function loadStage() {
     canvas.setAttribute('id', 'model')
     let width = document.documentElement.clientWidth
     let height = document.documentElement.clientHeight
-    canvas.setAttribute('width', width / 10)
-    canvas.setAttribute('height', height / 3.5)
+    let cw = width / 10
+    let ch = height / 3.5
+    canvas.setAttribute('width', cw < 100 ? 100 : cw)
+    canvas.setAttribute('height', ch < 200 ? 200 : ch)
     let msgBox = document.createElement('div')
     msgBox.setAttribute('class', 'in-a-word vanishIn')
     msgBox.innerText = '点击随机生成一言'
