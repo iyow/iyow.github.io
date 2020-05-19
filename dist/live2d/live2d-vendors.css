@@ -1,0 +1,45 @@
+.landlord {
+    position: absolute;
+    z-index: 9;
+    height: 35vh;
+    right: 10vw;
+    bottom: 5vh;
+    font-size: 13px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 一言 Hitokoto */
+
+.in-a-word {
+    width: 15vw;
+    color: #fff;
+    padding: 7px;
+    text-align: center;
+    border: 2px solid rgba(75, 127, 199, 0.9);
+    background-color: rgba(74, 59, 114, 0.9);
+    border-radius: 5px;
+    user-select: none;
+}
+
+.vanishIn {
+    animation: 1s vanishIn;
+}
+
+@keyframes vanishIn {
+    0% {
+        opacity: 0;
+        transform-origin: 50% 50%;
+        transform: scale(2, 2);
+        filter: blur(90px);
+    }
+    100% {
+        opacity: 1;
+        transform-origin: 50% 50%;
+        transform: scale(1, 1);
+        filter: blur(0px);
+    }
+}
