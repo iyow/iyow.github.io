@@ -15,6 +15,7 @@
 /* 一言 Hitokoto */
 
 .in-a-word {
+    position: relative;
     width: 15vw;
     color: #fff;
     padding: 7px;

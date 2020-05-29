@@ -1,4 +1,5 @@
 import hitokotoList from '../data_hitokoto'
+import bindSpeech from './speakMessage'
 import Utils from '@src/common/js/utils.js'
 function getRandomHitokoto(list = []) {
     let max = list.length
@@ -10,9 +11,12 @@ function getRandomHitokoto(list = []) {
 
 async function initHitokoto(selector, animationClass) {
     let dom = document.querySelector(selector)
+    let hitokotoSpeech = bindSpeech(dom.parentElement)
     dom.addEventListener('click', (event) => {
+        let hitokoto = getRandomHitokoto(hitokotoList.message)
         dom.classList.add(animationClass)
-        dom.innerText = getRandomHitokoto(hitokotoList.message)
+        dom.innerText = hitokoto
+        hitokotoSpeech.setSpeakWord(hitokoto)
     })
     dom.addEventListener('animationend', (event) => {
         dom.classList.remove(animationClass)
