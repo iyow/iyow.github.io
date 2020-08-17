@@ -15,3 +15,8 @@ html, body {
     --f: calc(var(--f-size) * var(--f-unit));
     font-size: var(--f);
 }
+
+.logo-link {
+    color: currentColor;
+    text-decoration: none;
+}
