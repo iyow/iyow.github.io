@@ -1,5 +1,9 @@
 import './index.css'
 import "@src/common/css/anime.css"
+// components
+// logo
+import '@src/main/components/Logo/logo.css'
+// Hidden_Gems/Easter_Eggs/
 import './particle-animation.js'
 
 document.addEventListener('click', () => {

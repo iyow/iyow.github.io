@@ -16,11 +16,14 @@ body {
 .logo {
     position: absolute;
     z-index: 9;
-    width: 100px;
     font-size: var(--f);
 }
 
 .logo-link {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    overflow: hidden;
     color: currentColor;
     text-decoration: none;
 }
