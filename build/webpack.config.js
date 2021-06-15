@@ -7,10 +7,10 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
 const rootPath = path.resolve(__dirname, '..')
-const srcPath = path.resolve(__dirname, '../src')
+const srcPath = path.resolve(rootPath, 'src')
 const mainPagePath = path.resolve(srcPath, 'main')
 const _404PagePath = path.resolve(srcPath, '404')
-const distPath = path.resolve(__dirname, '../dist')
+const distPath = path.resolve(rootPath, 'dist')
 
 module.exports = {
     resolve: {

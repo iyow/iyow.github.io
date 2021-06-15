@@ -43,7 +43,7 @@
     --n-tenth: calc(var(--f-size) * .1 * var(--top));
     --t-cut: calc(var(--n-tenth) / var(--f-size) * 100%);
     --b-cut: calc(var(--t-cut) + var(--v-height));
-    content: attr(data-text);
+    content: attr(data-glitchtext);
     position: absolute;
     width: 100%;
     left: 0;
@@ -63,6 +63,8 @@
     animation: glitch-a 3.1s infinite alternate;
 }
 
+
+/* 动画修改 自定义属性的值 */
 @keyframes glitch-a {
 
     10%,
