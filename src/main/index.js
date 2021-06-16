@@ -2,9 +2,10 @@ import './index.css'
 import "@src/common/css/anime.css"
 // components
 // logo
-import '@src/main/components/Logo/logo.css'
+import '@src/common/components/Logo/logo.css'
 // Hidden_Gems/Easter_Eggs/
 import './particle-animation.js'
+import '@src/common/js/titleChange.js'
 
 document.addEventListener('click', () => {
     // import('@src/plugins/live2d')

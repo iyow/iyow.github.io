@@ -1,4 +1,4 @@
-import Utils from '@src/common/js/utils.js'
+import { random } from '@src/common/js/utils.js'
 import './helper/live2d.js'
 import './index.css'
 
@@ -26,7 +26,7 @@ function loadStage() {
 async function main() {
     loadStage()
     let all = modelList.length
-    loadlive2d('model', modelList[Utils.random(0, all - 1)])
+    loadlive2d('model', modelList[random(0, all - 1)])
     Hitokoto.initHitokoto('.in-a-word', 'vanishIn')
 }
 main()
